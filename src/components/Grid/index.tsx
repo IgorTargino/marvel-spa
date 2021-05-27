@@ -20,16 +20,9 @@ const Grid = () => {
   }, [])
 
   return (
-    <main className={styles.container}>
-      <ul>
-        {charactersData.map((character: CharacterData) => (
-          <li key={character.id}>
-            <h1>{character.name}</h1>
-            <img src={character.thumbnail.path + character.thumbnail.extension} alt="" />
-          </li>
-        ))}
-      </ul>
-    </main>
+    <div>
+      <p>{charactersData}</p>
+    </div>
   )
 }
 

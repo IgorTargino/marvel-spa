@@ -32,6 +32,7 @@ const CharactersContextProvider = ({ children }: CharactersContextProviderProps)
       setError(null);
       const { data } = await api.get('/');
       setCharactersData(data);
+      console.log(data);
     } catch (errors) {
       setError(errors.message);
     }
