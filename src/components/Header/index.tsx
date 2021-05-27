@@ -19,8 +19,6 @@ const Header = ({
   return (
     <header className={styles.container}>
       <div className={styles.maxWidth}>
-        <div className={styles.block}>
-        </div>
         <div className={styles.logo}>
           <img src="./logo.png" alt="logo da marvel" />
         </div>
