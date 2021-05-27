@@ -1,20 +1,33 @@
+import { useState } from "react";
+import Footer from "../components/Footer";
+import Grid from "../components/Grid";
 import Header from "../components/Header";
+import Loading from "../components/Loading";
+import { useMarvelContext } from "../context/MarvelContext";
 import styles from "../styles/Home.module.scss";
 
-import api from "../services/api";
-import { useEffect } from "react";
-
-export default function Home() {
-  useEffect(() => {
-    api
-      .get('/characters')
-      .then((response) => console.log(response.data.data))
-      .catch((err) => console.log(err));
-  }, []);
+const Home = () => {
+  const [inputValue, setInputValue] = useState("");
+  const [selected, setSelected] = useState("characters");
+  const [currentPage, setCurrentPage] = useState(0)
 
   return (
     <div className={styles.container}>
-      <Header />
+      <Header
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+        selected={selected}
+        setSelected={setSelected}
+      />
+      <Grid
+        inputValue={inputValue}
+        selected={selected}
+        currentPage={currentPage}
+      />
+
+      <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </div>
   );
-}
+};
+
+export default Home;
