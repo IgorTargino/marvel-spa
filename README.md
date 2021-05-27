@@ -55,7 +55,7 @@ Também deverá gerar um hash no site md5hashgenetor e adicionalo á váriavel h
 
 hash = (timestemp + PRIVATE_KEY + PUBLIC_KEY)
 
-obs: timestemp = ts = 1622102400599
+obs: timestemp = ts = 1622102400599 ou você pode gerar o seu próprio ts com Date.now()
 
 ### Instalação
 ```
