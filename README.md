@@ -1,34 +1,100 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/IgorTargino/podcastr?color=%2304D361&style=flat">
 
-## Getting Started
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/IgorTargino/podcastr?style=flat">
+  
+  <a href="https://github.com/IgorTargino/podcastr/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/IgorTargino/podcastr?style=flat">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?style=flat">
+  
+</p>
 
-First, run the development server:
+## 🧐 Sobre o projeto
 
-```bash
-npm run dev
-# or
-yarn dev
+Uma aplicação que consome a api da Marvel e retorna uma lisa de personages ou séries, podendo também pesquisar pelo nome do personagem ou da série<br>
+
+<a align="center" target="blank" href="https://podcastr-sage.vercel.app/">
+    <img alt="Site podcastr" src="https://img.shields.io/static/v1?label=site&message=podcastr&color=4953B8&style=flat&logo=vercel">
+</a>
+
+## 🎨 Layout
+### Telas Desktop
+
+<div align="center">
+  <img width="100%" src="./.github/tela-desktop.png"/>
+</div>
+
+### Telas Mobile
+
+<div align="center">
+  <img width="50%" height="50%" src="./.github/tela-mobile.png"/>
+</div>
+
+## ⚙️ Funcionalidades
+
+- [x] Listagem de personagen;
+- [x] Listagem de séries;
+- [x] Busca por nome/title;
+- [x] Responsividade
+- [x] Paginação
+  
+## Como executar o projeto
+### Pré-requisitos
+- git 
+- Node.js
+- NPM ou Yarn
+### Variáveis de Ambiente
+Além das ferramentas anteriores é necessário criar duas váriaveis de ambiente em .env.local na raiz do projeto e informar a sua PUBLIC_KEY e Private_KEY da marvel API.
+
+NEXT_PUBLIC_API_KEY= PUBLIC_KEY
+NEXT_PRIVATE_API_KEY= PRIVATE_KEY
+
+Também deverá gerar um hash no site md5hashgenetor e adicionalo á váriavel hash presente no arquivo /src/services/api.
+
+hash = (timestemp + PRIVATE_KEY + PUBLIC_KEY)
+
+obs: timestemp = ts = 1622102400599
+
+### Instalação
 ```
+# Abra o terminal e copie este repositório com o comando
+$ git clone https://github.com/IgorTargino/marvel-spa.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Acesse a pasta do projeto no prompt de comando 
+$ cd marvel-spa
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+# Instale as dependências
+yarn install
+ou
+$ npm install
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Execute a aplicação
+$ yarn dev
+ou
+$ npm run dev
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Acesse http://localhost:3000 no seu navagador.
 
-## Learn More
+```
+## 🚀 Tecnologias 
+Tecnologias utilizadas para desenvolver o projeto:
+- next.js
+- react.js
+  - SPA
+- typescript
+- context
+- axios
+- sass
+- lottie
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🦸‍♂️ **Autor**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p>
+ <sub><strong>🌟 Igor Targino Marinho🌟</strong></sub>
+</p>
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Linkedin Badge](https://img.shields.io/badge/-IgorTargino-blue?style=for-the-badge&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-targino/)](https://www.linkedin.com/in/igor-targino/)
+[![Gmail Badge](https://img.shields.io/badge/-igortargino01@gmail.com-c14438?style=for-the-badge&logo=Gmail&logoColor=white&link=mailto:igortargino01@gmail.com)](mailto:igortargino01@gmail.com)
