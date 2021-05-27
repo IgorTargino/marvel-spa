@@ -1,7 +1,12 @@
-import '../styles/globals.scss'
+import { CharactersContextProvider } from "../contexts/CharactersContext";
+import "../styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <CharactersContextProvider>
+      <Component {...pageProps} />
+    </CharactersContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

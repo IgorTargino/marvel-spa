@@ -25,7 +25,7 @@ const Header = () => {
             onChange={(event) => setInputValue(event.target.value)}
           />
           <select value={type} onChange={(event) => setType(event.target.value)}>
-            <option selected value="characters">personagens</option>
+            <option defaultValue="characters">personagens</option>
             <option value="stories">histórias</option>
             <option value="series">series</option>
           </select>
