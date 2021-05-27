@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     api
-      .get('characters/')
+      .get('/characters')
       .then((response) => console.log(response.data.data))
       .catch((err) => console.log(err));
   }, []);
