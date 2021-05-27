@@ -3,15 +3,23 @@ import { AiOutlineInfoCircle } from "react-icons/ai";
 
 import styles from "./styles.module.scss";
 
-const Header = () => {
-  const [inputValue, setInputValue] = useState("");
-  const [type, setType] = useState("");
+interface Props {
+  inputValue: string;
+  setInputValue: React.Dispatch<React.SetStateAction<string>>;
+  selected: string;
+  setSelected: React.Dispatch<React.SetStateAction<string>>;
+}
 
+const Header = ({
+  inputValue,
+  setInputValue,
+  selected,
+  setSelected,
+}: Props) => {
   return (
     <header className={styles.container}>
       <div className={styles.maxWidth}>
-        <div className={styles.info}>
-          <AiOutlineInfoCircle size={20} color="white"/>
+        <div className={styles.block}>
         </div>
         <div className={styles.logo}>
           <img src="./logo.png" alt="logo da marvel" />
@@ -24,9 +32,11 @@ const Header = () => {
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
           />
-          <select value={type} onChange={(event) => setType(event.target.value)}>
-            <option defaultValue="characters">personagens</option>
-            <option value="stories">histórias</option>
+          <select
+            value={selected}
+            onChange={(event) => setSelected(event.target.value)}
+          >
+            <option defaultValue="characters">characters</option>
             <option value="series">series</option>
           </select>
         </div>

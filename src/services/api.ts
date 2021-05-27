@@ -1,5 +1,4 @@
 import axios from "axios";
-import md5 from "md5";
 
 export const PUBLIC_KEY = process.env.NEXT_PUBLIC_API_KEY;
 export const PRIVATE_KEY = process.env.NEXT_PRIVATE_API_KEY;
