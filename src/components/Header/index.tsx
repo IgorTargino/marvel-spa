@@ -11,7 +11,7 @@ const Header = () => {
     <header className={styles.container}>
       <div className={styles.maxWidth}>
         <div className={styles.info}>
-          <AiOutlineInfoCircle size={20} />
+          <AiOutlineInfoCircle size={20} color="white"/>
         </div>
         <div className={styles.logo}>
           <img src="./logo.png" alt="logo da marvel" />
