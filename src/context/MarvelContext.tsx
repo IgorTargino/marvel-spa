@@ -55,7 +55,6 @@ const MarvelContextProvider = ({children}: MarvelContextProviderPropr) => {
     } catch (error) {
       setError(error.message);
     } finally {
-      console.log(resultsData);
       setLoading(false);
     }
   };
