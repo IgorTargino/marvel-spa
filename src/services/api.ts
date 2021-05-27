@@ -1,14 +1,14 @@
-import axios from 'axios';
-import md5 from 'md5';
+import axios from "axios";
+import md5 from "md5";
 
-const PUBLIC_KEY = process.env.PUBLIC_KEY;
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+export const PUBLIC_KEY = process.env.NEXT_PUBLIC_API_KEY;
+export const PRIVATE_KEY = process.env.NEXT_PRIVATE_API_KEY;
 
-const ts = Number(new Date());
-const hash = md5(ts + PUBLIC_KEY + PRIVATE_KEY)
+const ts = '1622102400599'
+const hash = '283ad94187669b5387cff07e908c6e6d'
 
 const api = axios.create({
-  baseURL: 'https://gateway.marvel.com/v1/public/',
+  baseURL: "https://gateway.marvel.com:443/v1/public/",
   params: {
     ts,
     apikey: PUBLIC_KEY,
