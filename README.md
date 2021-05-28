@@ -15,7 +15,7 @@
 
 Uma aplicação que consome a api da Marvel e retorna uma lisa de personages ou séries, podendo também pesquisar pelo nome do personagem ou da série<br>
 
-<a align="center" target="blank" href="https://podcastr-sage.vercel.app/">
+<a align="center" target="blank" href="https://marvel-spa.vercel.app/">
     <img alt="Site podcastr" src="https://img.shields.io/static/v1?label=site&message=podcastr&color=4953B8&style=flat&logo=vercel">
 </a>
 
