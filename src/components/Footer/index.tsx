@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi";
 
 import { useMarvelContext } from "../../context/MarvelContext";

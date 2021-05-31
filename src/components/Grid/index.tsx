@@ -28,12 +28,14 @@ const Grid = ({ inputValue, selected, currentPage }: Props) => {
   return (
     <main className={styles.container}>
       <div className={styles.maxWidth}>
+        {loading && <Loading/>}
         {resultsData.map((data, index) => {
           return (
             <GridItem
               id={data.id}
               title={data.name ? data.name : data.title}
               thumb={`${data.thumbnail.path}.${data.thumbnail.extension}`}
+
               key={index}
             />
           );

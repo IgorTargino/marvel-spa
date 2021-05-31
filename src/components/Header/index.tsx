@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { AiOutlineInfoCircle } from "react-icons/ai";
+import React from "react";
 
 import styles from "./styles.module.scss";
 

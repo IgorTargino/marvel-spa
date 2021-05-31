@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useCallback, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 import api from "../services/api";
 
 interface ResultsData {
@@ -52,8 +52,8 @@ const MarvelContextProvider = ({children}: MarvelContextProviderPropr) => {
       setTotalItens(data.data.total);
       setResultsData(data.data.results);
 
-    } catch (error) {
-      setError(error.message);
+    } catch (err) {
+      setError(err.message);
     } finally {
       setLoading(false);
     }
