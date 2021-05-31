@@ -48,12 +48,12 @@ Uma aplicação que consome a api da Marvel e retorna uma lisa de personages ou 
 - Node.js
 - NPM ou Yarn
 ### Variáveis de Ambiente
-Além das ferramentas anteriores é necessário criar duas váriaveis de ambiente em .env.local na raiz do projeto e informar a sua PUBLIC_KEY e Private_KEY da marvel API.
+Além das ferramentas anteriores é necessário criar duas váriaveis de ambiente no arquivo .env.local localizado na raiz do projeto.
 
-NEXT_PUBLIC_API_KEY= PUBLIC_KEY
+NEXT_PUBLIC_API_KEY= PUBLIC_KEY <br>
 NEXT_PRIVATE_API_KEY= PRIVATE_KEY
 
-Também deverá gerar um hash no site md5hashgenetor e adicionalo á váriavel hash presente no arquivo /src/services/api.
+Também deverá gerar um hash no site md5hashgenerator e adicionalo á váriavel hash presente no arquivo /src/services/api.
 
 hash = (timestemp + PRIVATE_KEY + PUBLIC_KEY)
 
