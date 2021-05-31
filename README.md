@@ -20,16 +20,18 @@ Uma aplicação que consome a api da Marvel e retorna uma lisa de personages ou 
 </a>
 
 ## 🎨 Layout
-### Telas Desktop
+
+#### Figma: https://www.figma.com/file/mm5upc0jW8gBTZWNL7GRrc/marvel-spa?node-id=0%3A1
+### Tela Desktop
 
 <div align="center">
   <img width="100%" src="./.github/tela-desktop.png"/>
 </div>
 
-### Telas Mobile
+### Tela Mobile
 
 <div align="center">
-  <img width="50%" height="50%" src="./.github/tela-mobile.png"/>
+  <img width="25%" height="25%" src="./.github/tela-mobile.png"/>
 </div>
 
 ## ⚙️ Funcionalidades
