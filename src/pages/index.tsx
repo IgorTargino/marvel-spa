@@ -2,12 +2,16 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import Grid from "../components/Grid";
 import Header from "../components/Header";
+import Loading from "../components/Loading";
+import { useMarvelContext } from "../context/MarvelContext";
 import styles from "../styles/Home.module.scss";
 
 const Home = () => {
   const [inputValue, setInputValue] = useState("");
   const [selected, setSelected] = useState("characters");
   const [currentPage, setCurrentPage] = useState(0);
+
+  const { loading } = useMarvelContext();
 
   return (
     <div className={styles.container}>
@@ -17,12 +21,13 @@ const Home = () => {
         selected={selected}
         setSelected={setSelected}
       />
+
       <Grid
         inputValue={inputValue}
         selected={selected}
         currentPage={currentPage}
       />
-
+      {loading && <Loading />}
       <Footer currentPage={currentPage} setCurrentPage={setCurrentPage} />
     </div>
   );

@@ -28,7 +28,6 @@ const Grid = ({ inputValue, selected, currentPage }: Props) => {
   return (
     <main className={styles.container}>
       <div className={styles.maxWidth}>
-        {loading && <Loading/>}
         {resultsData.map((data, index) => {
           return (
             <GridItem
