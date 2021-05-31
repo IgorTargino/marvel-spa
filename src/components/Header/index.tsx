@@ -19,7 +19,7 @@ const Header = ({
     <header className={styles.container}>
       <div className={styles.maxWidth}>
         <div className={styles.logo}>
-          <img src="./logo.png" alt="logo da marvel" />
+          <img src="./logo.svg" alt="logo da marvel" />
         </div>
 
         <div className={styles.search}>
